@@ -48,6 +48,21 @@ plugins { id("ksuto.java-library") }
 dependencies { api(libs.ksuto.commons) }
 ```
 
+## Logs
+
+API unique : **SLF4J** (`private static final Logger logger = LoggerFactory.getLogger(MaClasse.class);`).
+Les bibliothèques ne dépendent que de `slf4j-api` ; les applications ajoutent `libs.ksuto.logger` (Logback, fenêtre Swing,
+aspect Guice) et un `src/main/resources/logback.xml` :
+
+```xml
+<configuration>
+    <include resource="fr/ksuto/logger/logback-ksuto.xml"/>
+    <!-- <include resource="fr/ksuto/logger/logback-ksuto-swing.xml"/> fenêtre de log, optionnelle -->
+    <logger name="fr.ksuto.clockwork" level="DEBUG"/>
+    <root level="WARN"><appender-ref ref="CONSOLE"/></root>
+</configuration>
+```
+
 ## Lancer un build
 
 `./gradlew build` (Windows : `gradlew.bat build`). Gradle 9 doit être lancé avec un JDK ≥ 17 ;

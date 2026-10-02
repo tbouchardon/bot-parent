@@ -1,4 +1,4 @@
-// Conventions Java communes : toolchain, encodage, Lombok, JUnit
+// Conventions Java communes : toolchain, encodage, Lombok, JUnit (Logback pour les logs des tests)
 
 plugins {
     java
@@ -27,6 +27,7 @@ dependencies {
     testImplementation(platform(lib("junit-bom")))
     testImplementation(lib("junit-jupiter"))
     testRuntimeOnly(lib("junit-platform-launcher"))
+    testRuntimeOnly(lib("logback-classic"))
 }
 
 tasks.test {
