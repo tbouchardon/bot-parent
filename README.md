@@ -62,6 +62,11 @@ aspect Guice) et un `src/main/resources/logback.xml` :
 </configuration>
 ```
 
+## Thème Swing
+
+`Theme.apply()` (Commons) applique FlatLaf avant la création des fenêtres ; le thème se choisit au lancement avec
+`-Dksuto.theme=dark|light|intellij|darcula|none` (dark par défaut, none = thème Swing d'origine).
+
 ## Lancer un build
 
 `./gradlew build` (Windows : `gradlew.bat build`). Gradle 9 doit être lancé avec un JDK ≥ 17 ;
