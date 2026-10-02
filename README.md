@@ -1,7 +1,7 @@
 # Bot Parent : logique de build partagée
 
 Conventions Gradle et catalogue de versions communs à tous les projets ksuto
-(Commons, Logger, TBoTools, Bot Generator, Bot Peripherals, Bot Commons, ClockWork).
+(Commons, Logger, Bot Generator, Bot Peripherals, Bot Commons, ClockWork).
 
 ## Organisation attendue
 
@@ -12,7 +12,6 @@ Les dépôts sont clonés côte à côte, avec ces noms de dossiers :
 ├── Bot Parent/        ← ce dépôt
 ├── Commons/           fr.ksuto:commons
 ├── Logger/            fr.ksuto:logger
-├── TBoTools/          fr.ksuto:tools
 ├── Bot Generator/     fr.ksuto.bot:generator
 ├── Bot Peripherals/   fr.ksuto.bot:peripherals
 ├── Bot Commons/       fr.ksuto.bot:bot-commons

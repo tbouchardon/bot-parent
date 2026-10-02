@@ -13,9 +13,8 @@ commons-lang3 = "3.21.0"
 foojay = "1.0.0"
 
 # Projets ksuto (résolus depuis les sources via includeBuild)
-ksuto-commons = "1.0"
+ksuto-commons = "1.1"
 ksuto-logger = "2.0"
-ksuto-tools = "1.1"
 ksuto-generator = "1.1"
 ksuto-peripherals = "2.2.0"
 
@@ -33,6 +32,5 @@ commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "co
 
 ksuto-commons = { module = "fr.ksuto:commons", version.ref = "ksuto-commons" }
 ksuto-logger = { module = "fr.ksuto:logger", version.ref = "ksuto-logger" }
-ksuto-tools = { module = "fr.ksuto:tools", version.ref = "ksuto-tools" }
 ksuto-generator = { module = "fr.ksuto.bot:generator", version.ref = "ksuto-generator" }
 ksuto-peripherals = { module = "fr.ksuto.bot:peripherals", version.ref = "ksuto-peripherals" }
