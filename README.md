@@ -8,7 +8,7 @@ Bots qui s'appuient sur ces briques :
 | Bot | Jeu | Briques | État |
 |---|---|---|---|
 | ClockWork | World of Warcraft | Bot Parent, Commons, Logger, Bot Peripherals | Maintenu, sous Gradle |
-| Bot_Rumble | Warcraft Rumble | Ancien parent Maven, Bot Peripherals, Bot Generator | Non maintenu, pas encore migré vers Gradle |
+| Bot_Rumble | Warcraft Rumble | Ancien parent Maven, Bot Peripherals, Bot Generator | Abandonné, resté sous Maven |
 
 ## Organisation attendue
 
