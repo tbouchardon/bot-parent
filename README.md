@@ -3,6 +3,13 @@
 Conventions Gradle et catalogue de versions communs à tous les projets ksuto
 (Commons, Logger, Bot Generator, Bot Peripherals, ClockWork).
 
+Bots qui s'appuient sur ces briques :
+
+| Bot | Jeu | Briques | État |
+|---|---|---|---|
+| ClockWork | World of Warcraft | Bot Parent, Commons, Logger, Bot Peripherals | Maintenu, sous Gradle |
+| Bot_Rumble | Warcraft Rumble | Ancien parent Maven, Bot Peripherals, Bot Generator | Non maintenu, pas encore migré vers Gradle |
+
 ## Organisation attendue
 
 Les dépôts sont clonés côte à côte, avec ces noms de dossiers :
