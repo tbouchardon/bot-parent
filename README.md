@@ -1,7 +1,7 @@
 # Bot Parent : logique de build partagée
 
-Conventions Gradle et catalogue de versions communs à tous les projets ksuto
-(Commons, Logger, Bot Generator, Bot Peripherals, ClockWork).
+Conventions Gradle et catalogue de versions communs à tous les projets ksuto : les briques (Commons, Logger,
+Bot Generator, Bot Peripherals) et les bots qui s'en servent.
 
 Bots qui s'appuient sur ces briques :
 
@@ -12,7 +12,7 @@ Bots qui s'appuient sur ces briques :
 
 ## Organisation attendue
 
-Les dépôts sont clonés côte à côte, avec ces noms de dossiers :
+Les briques sont clonées côte à côte, avec ces noms de dossiers ; un bot se place à côté, sous le nom de son choix :
 
 ```
 00_Perso/
@@ -21,11 +21,11 @@ Les dépôts sont clonés côte à côte, avec ces noms de dossiers :
 ├── Logger/            fr.ksuto:logger
 ├── Bot Generator/     fr.ksuto.bot:generator
 ├── Bot Peripherals/   fr.ksuto.bot:peripherals
-└── ClockWork/         application
+└── Mon Bot/           le bot (application), ne clone que les briques qu'il utilise
 ```
 
 Chaque projet inclut ses dépendances ksuto **depuis leurs sources** (`includeBuild("../…")`) :
-une modification dans `Bot Peripherals` est visible immédiatement dans ClockWork, sans `install`.
+une modification dans `Bot Peripherals` est visible immédiatement dans le bot, sans `install`.
 
 ## Contenu
 
@@ -64,7 +64,7 @@ aspect Guice) et un `src/main/resources/logback.xml` :
 <configuration>
     <include resource="fr/ksuto/logger/logback-ksuto.xml"/>
     <!-- <include resource="fr/ksuto/logger/logback-ksuto-swing.xml"/> fenêtre de log, optionnelle -->
-    <logger name="fr.ksuto.clockwork" level="DEBUG"/>
+    <logger name="fr.ksuto.monbot" level="DEBUG"/>
     <root level="WARN"><appender-ref ref="CONSOLE"/></root>
 </configuration>
 ```
